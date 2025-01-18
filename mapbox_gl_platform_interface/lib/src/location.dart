@@ -164,7 +164,7 @@ class LatLngQuad {
   }
 
   @override
-  int get hashCode => hashValues(topLeft, topRight, bottomRight, bottomLeft);
+  int get hashCode => Object.hash(topLeft, topRight, bottomRight, bottomLeft);
 }
 
 /// User's observed location
